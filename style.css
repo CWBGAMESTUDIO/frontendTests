@@ -1,0 +1,291 @@
+body {
+    background-image: url(images/wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Barra de Navegação */
+.navbar {
+    z-index: 9999;
+    position: absolute;
+}
+
+
+.button-navbar {
+    position: absolute;
+    text-decoration: none;
+    text-align: end;
+    width: 50px;
+    height: 10px;
+    top: 36px;
+
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    
+    font-size: 20px;
+    line-height: 10px;
+    /* identical to box height, or 50% */
+
+
+    color: #ffffff;
+}
+.home {
+    padding-left: 900px;
+}
+.container-fluid1 {
+    padding-left: 100px;
+}
+.container-fluid {
+    max-width: 400px;
+}
+
+/*Barra de Navegação Mobile*/
+
+.navbarHomeMobile {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  
+  font-size: 20px;
+  line-height: 10px;
+}
+
+.navbarListagemMobile {
+  margin-top: 20px;
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  
+  font-size: 20px;
+  line-height: 10px;
+}
+
+.navbarContentMobile{
+  padding-top: 50px;
+  text-align: center;
+}
+
+.NavButtonMobile{
+  margin-left: 500px;
+  border: none;
+  background-color: #00000000;
+  color: #4F2ED4;
+}
+
+.container-fluid img {
+  width: 30px;
+}
+
+.navbarMobile {
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbarDesktop {
+  display: block;
+}
+
+
+/*Conteudo Listagem*/
+
+.cat-logo {
+    margin-left: 100px;
+}
+
+.cat-logo img {
+    margin-top: -300px;
+}
+
+/*Conteudo Home*/
+
+.contentTotal {
+  text-align: center;
+  padding: 20px;
+}
+
+
+.text-home {
+    text-align: end;
+    margin-bottom: 250px;
+}
+
+.title-home {
+    font-size: 60px;
+}
+
+.content-home {
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4F2ED4;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 12px;
+    border: none;
+    font-family: 'Luckiest Guy';
+}
+
+.content {
+    display: inline-block;
+    margin-top: 300px;
+
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+
+
+    color: #ffffff;
+}
+
+/* LISTAGEM.HTML */
+
+.cats {
+    padding: 180px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    position: relative;
+}
+.cats img {
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+/*Media Query*/
+
+@media (max-width: 1630px)
+{
+  .home {
+    padding-left: 800px;
+  }
+}
+
+
+@media (max-width: 1470px)
+{
+  .home {
+    padding-left: 700px;
+  }
+}
+
+@media (max-width: 1260px)
+{
+  .home {
+    padding-left: 600px;
+  }
+
+}
+
+@media (max-width: 1090px)
+{
+  .home {
+    padding-left: 500px;
+  }
+}
+
+@media (max-width: 900px)
+{
+  .navbarDesktop {
+    display: none;
+  }
+  .navbarMobile {
+    display: block;
+  }
+
+  .cats {
+    margin-top: 50px;
+    padding: 70px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  .cats img {
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 810px)
+{
+  .contentTotal {
+    margin-top: -220px;
+  }
+  .cat-logo {
+    margin-top: 180px;
+    margin-right: 90px;
+  }
+}
+
+@media (max-width: 750px)
+{
+  .NavButtonMobile {
+    margin-left: 370px;
+  }
+  .cats {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 670px)
+{
+  .cats {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 620px)
+{
+  .cats {
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 560px)
+{
+  .cats {
+    margin-left: -20px;
+  }
+  .cats img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 520px)
+{
+  .NavButtonMobile {
+    margin-left: 350px;
+  }
+  .cats {
+    text-align: center;
+    padding: 20px;
+    padding-top: 90px;
+    margin-left: -20px;
+  }
+  .cats img {
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 410px)
+{
+  .NavButtonMobile {
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 320px)
+{
+  .NavButtonMobile {
+    margin-left: 220px;
+  }
+}
