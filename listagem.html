@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <!-- Importando fonte do site -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Luckiest+Guy" />
+    <!-- Importando Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Importando Bootstrap Parte 1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CWB Projeto WEB</title>
+  </head>
+  <body onload=carregarCats(); id="body">
+
+    <!-- Barra de Navegação Mobile-->
+    <div class="navbarMobile">
+    <nav class="navbar navbarMobile navbar-dark fixed-top">
+      <div class="container-fluid">
+        <button class="NavButtonMobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <img src="images/menu-regular.png"/>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-body" style="background-color: black;">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 navbarContentMobile">
+              <li class="nav-item">
+                <a class="nav-link active navbarHomeMobile" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbarListagemMobile" href="listagem.html" style="color: #6D4BF8;">Listagem</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+    
+    
+    <!-- Barra de Navegação -->
+          <div class="navbarDesktop">
+            <nav class="navbar">
+              <div class="container-fluid mx-auto">
+              <a class="navbar-brand" href="index.html"><b class="button-navbar home">HOME</b></a>
+              </div>
+              <div class="container-fluid1 mx-auto">
+                  <a class="navbar-brand1" href="listagem.html"><b class="button-navbar listagem" style="color: #6D4BF8;">LISTAGEM</b></a>
+              </div>
+          </nav>
+        </div>
+
+    <!-- Conteúdo -->
+    <div id="content">
+          <div class="cats" id="cats">
+        </div>
+
+        <div class="text-center mx-auto">
+          <br>
+          <button type="button" id="loadMore" class="button">
+            Carregar mais
+          </button>
+          <br><br>
+        </div>
+    </div>
+    <!-- Importar Script -->
+    <script src="script.js"></script>
+
+    <!-- Importando Bootstrap Parte 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  </body>
+</html>
+
